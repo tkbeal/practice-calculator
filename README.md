@@ -22,4 +22,4 @@ You may also see any lint errors in the console.
 
 This was primarly designed after the stock calculator app available on MacOS.
 
-[Image of Calculator]("screenshot.png")
+![Image of Calculator](screenshot.png)
