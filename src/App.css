@@ -1,0 +1,83 @@
+.app {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-container {
+  background-color: rgb(50, 50, 50);
+  width: 240px;
+  /* height: 330px; */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: 
+    "display display"
+    "top-ops ops"
+    "nums ops"
+    "nums ops"
+    "nums ops"
+    "nums ops";
+}
+
+.display {
+  grid-area: display;
+  color: white;
+  height: 75px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 5px;
+}
+
+.top-ops {
+  grid-area: top-ops;
+  background-color:  rgb(73, 73, 73);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ops {
+  grid-area: ops;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.nums {
+  grid-area: nums;
+  background-color: rgb(103, 102, 102);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  box-shadow: none;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  border: 0.5px solid rgb(93, 91, 91);
+}
+
+.button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.orange {
+  background-color: rgb(255, 136, 0);
+}
+
+.span-2 {
+  grid-column: span 2;
+}
